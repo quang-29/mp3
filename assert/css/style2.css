@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary_color:#58bfe2;
+    --transition_color:#8241BB;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10px 100px 10px;
+    color: #58bfe2;
+    position: relative;
+}
+.cd{
+    width: 30%;
+    position: sticky;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+
+}
+.cd-thumb{
+    width: 250px;
+    height: 250px;
+    background-image: url(/assert/img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    
+}
+.cd .name{
+    margin-top: 10px;
+
+}
+.cd button {
+    padding: 15px 20px;
+    background-color: #58bfe2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.playlist{
+    width: 60%;
+
+}
+
+.infor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+
+}
+.infor_song{
+    margin-left: 20px;
+}
+.player{
+    position: fixed;
+    width: 100%;
+    max-height: 100px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background-color: #000;
+}
+
+.img-thumb{
+    width: 100px;
+    height: 60px;
+    background-image: url(/assert/img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+.img-thumb:hover{
+    transform: scale(1.2);
+}
+.control .btn--modify{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+.btn-toggle-play{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--transition_color);
+}
+.control .icon-pause{
+    display: none;
+}
+.player.playing .icon-play{
+    display: none;
+}
+.player.playing .icon-pause{
+    display: block;
+}
+.btn--modify .btn{
+    margin: 0 40px;
+}
+.timeChange{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    max-height: 20px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+  }
+  .song{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .song_lists{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-previous:hover,
+  .btn-next:hover
+   {
+    color:var(--transition_color);
+  }
+  .btn-repeat.active,
+  .btn-random.active{
+    color: var(--transition_color);
+  }
+  .cd .btn_play{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--transition_color);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+  .btn-play span{
+    margin-left: 10px;
+  }
+  .cd .btn_play .icon-pause{
+    display: none;
+  }
+  .cd.playing .icon-play{
+    display: none;
+    }
+  .cd.playing .icon-pause{
+    display: block;
+    }
+
+    .song_lists .active{
+        color: #fff;
+        background-color: var(--transition_color);
+    }
+    .song_lists .song:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease; 
+    }
+    .song:not(.active):hover{
+        color: #fff;
+    }
+    .progress span{
+        margin-top: 8px;
+    }
+    .timeChange .progress {
+        width: 90%;
+    }
+    .ml-5{
+        margin-left: 5px;
+    }
+    .mr-5{
+        margin-right: 5px;
+    }
+    .ml-20{
+        margin-left: 20px;
+    }
+    .songVolume {
+        display: flex;
+        align-items: center;
+        width: 100px;
+
+    }
+    .songVolume i {
+        font-size: 24px;
+    }
+    .songVolume .volumeRange{
+        width: 75px;
+        height: 6px;
+        margin-left: 15px;
+    }
+    .songVolume .icon-volume-mute{
+        display: none;
+    }
+    .songVolume .icon-volume{
+        width: 20px;
+    }
