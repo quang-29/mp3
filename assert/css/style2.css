@@ -352,6 +352,7 @@
         .icon-volume{
             
             font-size: 18px;
+            display: none;
         }
         .volumeRange{
             transform: rotate(90deg);
@@ -366,8 +367,7 @@
             max-height: 150px;
         }
         .container {
-            background-image: url(/assert/img/music_background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url(/assert/img/switzerland-4290226_1280.jpg);
+            
         }
     }
