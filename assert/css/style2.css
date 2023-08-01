@@ -365,5 +365,9 @@
         .player{
             max-height: 150px;
         }
-    
+        .container {
+            background-image: url(/assert/img/music_background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
