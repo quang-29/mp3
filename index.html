@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assert/css/style2.css">
+    <link rel="shortcut icon" href="#">
     <title>Nhạc của tôi</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class="cd">
             <div class="cd-thumb"></div>
             <h2 class="name"></h2>
-            <h4>Cập nhật 6/7/2023</h4>
+            
             <button class="btn_play">
                     <i class="fa-solid fa-play icon-play"></i>
                     <i class="fa-solid fa-pause icon-pause"></i>
@@ -132,13 +133,6 @@
                     image: './assert/img/1.jpg',
                     path: './assert/music/Hoacolau.mp3'   
                 },
-                //    {
-                //     id: 2,
-                //     name: 'À Lôi',
-                //     author: 'DoubleTT',
-                //     image: './assert/img/2.jpg',
-                //     path: './assert/music/Aloi.mp3' 
-                // },
                     {
                     id: 2,
                     name: 'Bốn Mùa Thương Em',
@@ -346,7 +340,6 @@
                         if (audio.duration) {
                             const progressPercent = Math.floor(audio.currentTime / audio.duration * 100);
                             progress.value = progressPercent;
-                            console.log(progressPercent);
 
                         }
                         if (endTime != 'NaN:NaN') {

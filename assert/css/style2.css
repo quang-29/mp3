@@ -133,9 +133,6 @@
 .player.playing .icon-pause{
     display: block;
 }
-.btn--modify .btn{
-   
-}
 .timeChange{
     display: flex;
     width: 100%;
@@ -205,10 +202,7 @@
         color: #fff;
         background-color: var(--transition_color);
     }
-    /* .song_lists .song:hover{
-        transform: scale(1.05);
-        transition: transform 0.3s ease; 
-    } */
+    
     .song:not(.active):hover{
         color: #fff;
     }
@@ -233,8 +227,6 @@
     .songVolume {
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
-        /* width: 100px; */
         font-size: 20px;
 
     }
@@ -296,9 +288,7 @@
         .song .infor{
             width: 80%;
         }
-        /* .song .infor .img-thumb{
-            width: 30%;
-        } */
+       
     }
     @media (max-width: 740px){
         .player .infor .infor_song h3{
@@ -363,16 +353,15 @@
             margin-top: 10px;
             width: 40px;
             height: 3px;
-            /* margin-left: 5px; */
             width: 85%;
             margin-top: 15px;
-            /* display: none; */
+     
         }
         .player{
             max-height: 150px;
         }
         .container {
-            background-image: url(/assert/img/anhnen.jpg);
+            background-image: url("../img/anhnen.jpg");
             
         }
     }
