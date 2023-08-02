@@ -248,17 +248,25 @@
         display: none;
     }
     .songVolume .icon-volume{
-        width: 30%;
+        width: 25%;
+        font-size: 24px;
     }
     @media (min-width: 1024px){
-
+        .infor .songVolume{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .songVolume .icon-volume{
+            font-size: 27px;
+        }
     }
     @media(min-width: 740px) and (max-width: 1024px){
         .player{
             padding: 10px 6px;
         }
         .player .infor .infor_song h3{
-            font-size: 12px;
+            font-size: 14px;
         }
         .player .infor .infor_song h5{
             font-size: 10px;
@@ -266,13 +274,9 @@
         .player .infor_song{
             margin-left: 10px;
         }
-        /* .songVolume {
-            font-size: 16px;
-            margin: 10px;
-
-        } */
-        .volumeRange{
-           margin-left: 5px;
+        .songVolume .icon-volume{
+            width: auto;
+            font-size: 20px;;
         }
         .cd{
             width: 100%;
@@ -298,7 +302,7 @@
     }
     @media (max-width: 740px){
         .player .infor .infor_song h3{
-            font-size: 10px;
+            font-size: 15px;
         }
         .player .infor .infor_song h5{
             font-size: 8px;
@@ -341,27 +345,28 @@
             width: 60%;
         }
         .songVolume{
-            font-size: 13px;
+            font-size: 17px;
             margin: 0;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
-
         }
-        .icon-volume{
+        .songVolume .icon-volume{
             
-            font-size: 18px;
-            display: none;
+            font-size: 17px;
+            width: auto;
+            margin-left: 2px;
         }
-        .volumeRange{
+        .songVolume .volumeRange{
             transform: rotate(90deg);
             margin-top: 10px;
             width: 40px;
-            height: 4px;
-            margin-left: 5px;
-            width: 80%;
-            display: none;
+            height: 3px;
+            /* margin-left: 5px; */
+            width: 85%;
+            margin-top: 15px;
+            /* display: none; */
         }
         .player{
             max-height: 150px;
